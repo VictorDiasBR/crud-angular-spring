@@ -13,10 +13,16 @@ import { TabelaComponent } from './tabela/tabela.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { SharedModule } from '../shared/shared.module';
+import { TabelaFormComponent } from './tabela-form/tabela-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     DashboardComponent,
-    TabelaComponent
+    TabelaComponent,
+    TabelaFormComponent
   ],
   imports: [
     SharedModule,
@@ -29,7 +35,11 @@ import { SharedModule } from '../shared/shared.module';
     MatButtonModule,
     LayoutModule,
     MatTableModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSnackBarModule
   ]
 })
 export class PaginasModule { }
